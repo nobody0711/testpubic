@@ -1,0 +1,1 @@
+Confidential data resides here ==>  IP Address: 192.168.178.132   Current Time: Tue May 28 11:00:51 AM EDT 2024  Machine Type: x86_64  Hostname: kali  Operating System: Kali GNU/Linux Rolling
