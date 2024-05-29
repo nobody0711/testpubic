@@ -10,31 +10,12 @@
     </style>
 </head>
 <body>
+    <?PHP
+    echo 'Hello';?>
     <h1>Coordinates Receiver</h1>
     <div id="coordinates">
         <h2>Received Coordinates:</h2>
         <ul id="coordinates-list"></ul>
     </div>
-
-    <script>
-        const coordinatesList = document.getElementById('coordinates-list');
-
-        const ws = new WebSocket('127.0.0.1:8080'); // Replace with your server address
-
-        ws.onmessage = function(event) {
-            const data = JSON.parse(event.data);
-            const listItem = document.createElement('li');
-            listItem.textContent = `Latitude: ${data.latitude}, Longitude: ${data.longitude}`;
-            coordinatesList.appendChild(listItem);
-        };
-
-        ws.onopen = function() {
-            console.log('Connected to WebSocket server');
-        };
-
-        ws.onclose = function() {
-            console.log('Disconnected from WebSocket server');
-        };
-    </script>
 </body>
 </html>
