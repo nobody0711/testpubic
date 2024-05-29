@@ -12,7 +12,7 @@ foreach ($dataArray as $data) {
 }
 
 // Write data to file
-$file = 'nobody0711.github.io/testpubic/data.txt';
+$file = '/testpubic/data.txt';
 $current = file_get_contents($file);
 $current .= $postData . "\n";
 file_put_contents($file, $current);
